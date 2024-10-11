@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ccc;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    img {
+      width: 100%;
+      height: 600px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    section {
+      text-align: center;
+      background-color: #d1b9d9;
+      padding: 50px;
+      color: white;
+      font-size: 2em;
+    }
+
+    .iframe-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    iframe {
+      width: 48%;
+      height: 300px;
+      border: none;
+      display: block;
+    }
+
+    table {
+      height: auto;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      background-color: rgb(229, 243, 249);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="contactus.html">Contact</a>
+    <a href="help.html">Help</a>
+    <a href="store.html">Store</a>
+  </nav>
+
+  <div>
+    <img src="images/office.jpg.jpg" alt="Office Image">
+
+    <h4 align="center" style="background-color: lightpink; color: white;">
+      <a href="contactus.html" style="color: white; text-decoration: none;">Contact us</a>
+    </h4>
+
+    <img src="images/conta.jpg" alt="Contact Us">
+  </div>
+
+  <div>
+    <table align="center" border="1">
+      <thead>
+        <tr>
+          <th>First Name:
+            <input type="text" placeholder="first name">
+          </th>
+          <th>Last Name:
+            <input type="text" placeholder="last name">
+          </th>
+        </tr>
+      </thead>
+
+      <thead>
+        <tr>
+          <th>Email id:
+            <input type="email" placeholder="email id">
+          </th>
+          <th>Phone no:
+            <input type="number" placeholder="phone no.">
+          </th>
+        </tr>
+      </thead>
+
+      <thead>
+        <tr>
+          <th>City:
+            <select>
+              <option>Ahemdabad</option>
+              <option>Rajkot</option>
+              <option>Vadodra</option>
+              <option>Mumbai</option>
+            </select>
+          </th>
+          <th>Gender:
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <div class="iframe-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6800625945975!2d70.77238027529222!3d22.290106079693864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64ac8ee!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1728208926479!5m2!1sen!2sin"
+      loading="lazy"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NJL4OS_vJI8?si=Z-4Yywpk74T0vvE9"
+      title="YouTube video player" allowfullscreen></iframe>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <style>
+    table {
+      width: 80%;
+      border: 5px solid rgb(162, 219, 238);
+      border-collapse: collapse;
+      border-left: 15px solid rgb(162, 219, 238);
+      border-right: 15px solid rgb(162, 219, 238);
+      font-family: sans-serif;
+      background-color: snow;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: none;
+    }
+
+    input[type="submit"] {
+      background-color: rgb(197, 31, 31);
+      color: white;
+      padding: 10px 70px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+
+    }
+
+    input[type="submit"]:hover {
+      background-color: rgb(255, 77, 77);
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <table align="center" cellspacing="10px" cellpadding="10px">
+      <thead>
+        <tr align="left">
+          <th colspan="3">
+            <h1>Registration</h1>
+            <hr style="width: 300px; height: 5px; background-color: rgb(63, 4, 4); border-radius: 5px;" align="left">
+            <h4>Personal details</h4>
+          </th>
+        </tr>
+        <tr align="left">
+          <th>Full Name</th>
+          <th>Father's Name</th>
+          <th>Mother's Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align="left">
+          <td><input type="text" name="fullName" placeholder="Enter your name" required></td>
+          <td><input type="text" name="fatherName" placeholder="Enter your father's name" required></td>
+          <td><input type="text" name="motherName" placeholder="Enter your mother's name" required></td>
+        </tr>
+      </tbody>
+
+      <thead>
+        <tr align="left">
+          <th>Date of Birth</th>
+          <th>Aadhar card number</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align="left">
+          <td><input type="date" name="dob" placeholder="Enter your date of birth" required></td>
+          <td><input type="number" name="aadhar" placeholder="Enter your Aadhar card no." required></td>
+          <td><input type="email" name="email" placeholder="Enter your email" required></td>
+        </tr>
+      </tbody>
+
+      <thead>
+        <tr align="left">
+          <th>Mobile number</th>
+          <th>Gender</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align="left">
+          <td><input type="text" name="mobile" placeholder="Enter your mobile number" required></td>
+          <td><input type="text" name="gender" placeholder="Enter your gender" required></td>
+          <td><input type="text" name="address" placeholder="Enter your address" required></td>
+        </tr>
+      </tbody>
+
+      <thead>
+        <tr align="left">
+          <th colspan="3">
+            <hr width="500px" align="left">
+            <h4>Personal details</h4>
+          </th>
+        </tr>
+        <tr align="left">
+          <th>Stream</th>
+          <th>Previous class</th>
+          <th>Hobbies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align="left">
+          <td><input type="text" name="stream" placeholder="Enter your stream" required></td>
+          <td><input type="text" name="previousClass" placeholder="Enter your previous class" required></td>
+          <td><input type="text" name="hobbies" placeholder="Enter your hobbies" required></td>
+        </tr>
+      </tbody>
+
+      <thead>
+        <tr align="left">
+          <th>Account Number</th>
+          <th>Religion</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align="left">
+          <td><input type="text" name="accountNumber" placeholder="Enter Account number" required></td>
+          <td><input type="text" name="religion" placeholder="Enter your religion" required></td>
+          <td><input type="text" name="category" placeholder="Enter your category" required></td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr align="center">
+          <td colspan="3">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+
+</html>
