@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Canvas Shapes</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 150px;
+      background-color: papayawhip;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #mycanvas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      width: auto;
+      border: solid red 2px;
+      background-color: white;
+    }
+
+
+    .square,
+    .circle,
+    .rectangle {
+      display: block;
+      margin: 10px;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border: 2px solid red;
+      border-radius: 4px;
+
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-image: url('image/2.avif');
+      border-radius: 50%;
+      margin-left: 30px;
+    }
+
+    .rectangle {
+      width: 200px;
+      height: 100px;
+      background-color: orange;
+      border-radius: 4px;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mycanvas">
+    <canvas class="square"></canvas>
+    <canvas class="circle"></canvas>
+    <canvas class="rectangle"></canvas>
+  </div>
+</body>
+
+</html>
