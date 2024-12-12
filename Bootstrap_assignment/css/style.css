@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(85, 85, 249);
+  overflow-x: hidden;
+}
+
+.navbar-links li {
+  display: inline-block;
+  padding: 2px 25px;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.social-media li {
+  display: inline-block;
+  padding: 2px 10px;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.design {
+  margin-left: 13%;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#slider {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.58)), url('../images/image-1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.text-slider {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-left: 10%;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.sec {
+  margin-left: 10%;
+  width: 80%;
+  height: 500px;
+  padding: 25px;
+}
+
+.heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.third {
+  margin-left: 10%;
+  width: 80%;
+  height: 550px;
+  padding: 25px;
+  background-color: rgb(252, 246, 246);
+  text-align: center;
+}
+
+.third1 {
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.logo1 {
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+.card-page {
+  display: flex;
+}
+
+.fourth {
+  margin-left: 10%;
+  width: 80%;
+  height: 500px;
+  display: flex;
+}
+
+.experience {
+  display: flex;
+  margin-top: 12%;
+  height: 200px;
+  position: relative;
+}
+
+.projects {
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  padding: 25px;
+  background-color: rgb(252, 246, 246);
+  text-align: center;
+}
+
+.education {
+  margin-left: 10%;
+  width: 80%;
+  height: 50%;
+  padding: 25px;
+  background-color: rgb(252, 246, 246);
+  text-align: center;
+}
+
+.education .btn {
+  width: 15%;
+  gap: 20px;
+}
+
+.button1 {
+  height: 50px;
+}
+
+.button2 {
+  height: 50px;
+}
+
+.container {
+  display: flex;
+}
+
+.container .design,
+.design1 {
+  width: 45%;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.design {
+  padding: 20px;
+}
+
+.design1 {
+  padding: 20px;
+}
+
+.projects div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.projects .gal-img {
+  width: 22%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.projects .gal-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .social-media li {
+    padding: 5px;
+  }
+
+  #slider {
+    width: 100%;
+    height: 400px;
+  }
+
+  .image-overlay {
+    top: 20%;
+    left: 10%;
+    font-size: 20px;
+  }
+
+  .text-slider {
+    top: 20%;
+    right: auto;
+    margin-left: 5%;
+  }
+
+  .sec,
+  .third,
+  .fourth,
+  .projects,
+  .education {
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+  }
+
+  .third1 {
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container .design,
+  .design1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .projects .gal-img {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-links li {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .social-media li {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  #slider {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+  }
+
+  .image-overlay,
+  .text-slider {
+    top: 15%;
+    font-size: 16px;
+  }
+
+  .sec,
+  .third,
+  .fourth,
+  .projects,
+  .education {
+    margin-left: 5%;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .third1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container .design,
+  .design1 {
+    width: 100%;
+  }
+
+  .button1,
+  .button2 {
+    height: 40px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .projects .gal-img {
+    width: 100%;
+  }
+
+  .projects h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
