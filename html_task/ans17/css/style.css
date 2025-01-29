@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header
+{
+  background-color: grey;
+  padding: 4px 4px;
+}
+
+.header h1
+{
+  color: white;
+  text-align: center;
+}
+
+footer{
+  background-color: grey;
+    padding: 4px 10px;
+    height: 100px;
+    text-align: center;
+}
+
+footer p{
+  margin-top: 35px;
+  color: white;
+}

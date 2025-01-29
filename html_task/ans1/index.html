@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <script src='js/main.js'></script>
+</head>
+
+<body>
+
+  <div class="background-lightblue sticky-top mt-0">
+    <div class="container-fluid">
+      <div class="row px-md-5 align-items-center" style="background-color: rgb(232, 244, 248);">
+        <div class="text-center">
+          <a class="logo">
+            <img src="images/TOPS-logo.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto p-5 rounded mt-5 login-form ">
+      <h1 class="text-info text-center text-blue">Tops</h1>
+      <p class="text-info text-center text-dark"><b>Career Center Login</b></p>
+      <form method="post">
+        <div class="mb-3 w-100">
+          <label for="mobile" class="form-label">Mobile Number</label>
+          <input type="text" id="mobile" class="form-control" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+        </div>
+
+        <a href="">forgot password?</a>
+        <div class="form-group mt-4 w-75 mx-4 login ">
+          <button type="button" onclick="userLogin()" class="btn btn-primary w-100 mx-auto btn-md ">Login</button>
+        </div>
+      </form>
+
+
+    </div>
+
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

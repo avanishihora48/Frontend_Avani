@@ -1,0 +1,15 @@
+<script>
+  // A callback is a function passed as an argument to another function and is executed after the completion of that
+  //   function.
+
+  function greet(name, callback) {
+    console.log("Hello, " + name);
+    callback();
+  }
+
+  function sayBye() {
+    console.log("Goodbye!");
+  }
+
+  greet("John", sayBye);
+</script>
