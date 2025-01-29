@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+  <div>
+    <br><br>
+    <input type="text" placeholder="Enter 1-7 day:" id="day">
+    <br><br>
+    <button type="submit" onclick="display()">submit</button>
+  </div>
+</body>
+
+
+<script>
+  function display() {
+    var dayNumber = parseInt(document.getElementById("day").value);
+    var dayName;
+    switch (dayNumber) {
+      case 1:
+        dayName = "monday";
+        break;
+
+      case 2:
+        dayName = "tuesday";
+        break;
+
+      case 3:
+        dayName = "wednesday";
+        break;
+
+      case 4:
+        dayName = "thursday";
+        break;
+
+      case 5:
+        dayName = "friday";
+        break;
+
+      case 6:
+        dayName = "saturday";
+        break;
+
+      case 7:
+        dayName = "sunday";
+        break;
+
+      default:
+        dayName = "Invalid input! Please enter a number between 1 and 7.";
+    }
+
+    alert(dayName);
+  }
+
+
+</script>
+
+</html>
