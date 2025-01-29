@@ -1,0 +1,5 @@
+*HTML Elements*: They are the complete structure, including the opening tag, content (if any), and the closing tag.  
+  Example: <p>Hello</p> is an HTML element.
+
+*HTML Tags*: They are just the keywords inside angle brackets that define the start or end of an element.  
+  Example: <p> is the opening tag, and </p> is the closing tag. 
