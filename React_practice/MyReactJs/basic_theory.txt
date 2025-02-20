@@ -1,0 +1,52 @@
+1. What is React.js?
+React.js is a JavaScript library for building user interfaces (UIs), developed by Facebook. It helps create fast, dynamic, and reusable UI components.
+
+2. Key Features:
+-> Component-Based: UI is broken into reusable components.
+-> Virtual DOM: Improves performance by updating only changed parts of the UI.
+-> JSX (JavaScript XML): A syntax extension that looks like HTML inside JavaScript.
+-> One-Way Data Binding: Data flows in one direction, making debugging easier.
+-> State Management: Uses useState and useEffect hooks for handling component state.
+
+3. Core Concepts:
+🔹 Components: Reusable UI elements (function or class components).
+🔹 Props: Data passed from parent to child components.
+🔹 State: Internal component data that changes over time.
+🔹 Hooks: Functions like useState and useEffect to manage state and side effects.
+
+5. Why Use React?
+✔️ Fast Rendering (Virtual DOM)
+✔️ Reusable Components
+✔️ Strong Community Support
+✔️ Easy to Learn & Use
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Steps to create react app:- 
+
+1. npm create vite@latest app-name
+2. choose react
+3. cd app-name
+4. npm install 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+What are Components in React?
+-> Definition:
+   A component in React is a reusable, independent piece of UI that can be used multiple times in an application. It helps in breaking down a complex UI into smaller, 
+   manageable parts.
+
+-> Types of Components:
+
+🔹 Functional Components (Preferred) – Written as JavaScript functions.
+🔹 Class Components (Older method) – Written as ES6 classes.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+What is a Fragment in React?
+A Fragment in React is a lightweight way to group multiple elements without adding extra HTML nodes to the DOM. It helps improve performance and keeps the markup clean.
+
+Why Use Fragments?
+🔹 Avoids unnecessary <div> wrappers.
+🔹 Improves performance (no extra DOM nodes).
+🔹 Keeps the structure clean.
