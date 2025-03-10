@@ -10,7 +10,7 @@
 <body style="background-color: black;">
   <h2>Html Events</h2>
   <div>
-    <ul id="images">
+    <ul id="images" style="color: white;">
       <li><img width="200px" id="photoshop"
           src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
           alt="photoshop"></li>
@@ -31,13 +31,84 @@
   </div>
 </body>
 <script>
-  document.getElementById('owl').addEventListener('click', function () {
-    alert("owl clicked again ")
+
+  // type, timestamp, defaultPrevented
+  // target, toElement, srcElement, currentTarget,
+  // clientX, clientY, screenX, screenY
+  // altkey, ctrlkey, shiftkey, keyCode
+
+  /*
+    
+    Event bubbling flows from bottom to top in the DOM hierarchy.
+    
+    -> Event Bubbling Flow (Bottom → Top)
+    -> The event starts at the target element (where the event occurred).
+    -> It then propagates upward to its parent, grandparent, and so on, up to the <html> element.
+    
+    Stopping Bubbling (stopPropagation()) -> event.stopPropagation()
+     
+    output =>
+    owl clicked again 
+    clicked again ul
+    
+  */
+
+  // document.getElementById('owl').addEventListener('click', function (e) {
+  //   console.log("owl clicked again ");
+  //   e.stopPropagation() // Stops event from reaching the parent
+  // }, false)
+
+  // document.getElementById('images').addEventListener('click', function (e) {
+  //   console.log("owl clicked again ul");
+  // }, false)
+
+  // false is default over here... 
+
+  /*
+  
+  Event capturing (also called trickling) flows from top to bottom in the DOM hierarchy.
+  
+  -> Event Capturing Flow (Top → Bottom)
+  -> The event starts at the root of the DOM tree (e.g., document or <html>).
+  -> It travels downward through parent elements until it reaches the target element.
+
+  output =>
+  owl clicked again 
+  owl clicked again ul
+
+  */
+
+  // document.getElementById('owl').addEventListener('click', function (e) {
+  //   console.log("owl clicked again ");
+  // }, true)
+
+  // document.getElementById('images').addEventListener('click', function (e) {
+  //   console.log("owl clicked again ul");
+  // }, true)
+
+  document.getElementById('google').addEventListener('click', function (e) {
+    e.preventDefault();
+    console.log("google clicked");
   })
 
 
+  document.querySelector('#images').addEventListener('click', function (e) {
+    //console.log(e);
+    //console.log(e.target);
+    // console.log(e.target.parentNode);
+    // let removeIt = e.target.parentNode
+    // removeIt.remove() // by clicking on li it will remove whole list 
+
+    console.log(e.target.tagName);
+
+    if (e.target.tagName === "IMG") {
+      console.log(e.target.id);
+      let removeIt = e.target.parentNode
+      removeIt.remove() // by clicking on li it will remove whole list 
+    }
+
+    // removeIt.parentNode.removeChild(removeIt) => another method 
+  })
 </script>
-
-
 
 </html>

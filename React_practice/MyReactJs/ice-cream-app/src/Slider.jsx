@@ -19,13 +19,13 @@ export default function Slider() {
               className="px-6 py-2 text-sm font-bold rounded-full shadow-md bg-orange-100 "
               style={{ color: '#E73C56' }}
             >
-              Order now
+              Order now <span className="bi bi-caret-right"></span>
             </button>
             <button
-              className="px-6 py-2 text-sm font-bold rounded-full shadow-md bg-orange-100 mx-6"
+              className="px-3 py-2 text-sm font-bold rounded-full shadow-md bg-orange-100 mx-6"
               style={{ color: '#E73C56' }}
             >
-              How it's made?
+              How it's made? <span className="bi bi-caret-right"></span>
             </button>
           </div>
           <div className="mt-20 flex right-8">

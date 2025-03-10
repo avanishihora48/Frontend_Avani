@@ -59,7 +59,7 @@ export default function Milkshake() {
               Exercitationem libero quas recusandae.
             </p>
             <button className="px-6 mt-5 py-2 font-bold rounded-full shadow-lg bg-orange-100 text-red-500 hover:bg-orange-200 transition">
-              Read more
+              Read more <span className="bi bi-caret-right"></span>
             </button>
           </div>
         </div>

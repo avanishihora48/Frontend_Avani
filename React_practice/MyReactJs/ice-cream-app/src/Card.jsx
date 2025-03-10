@@ -109,10 +109,10 @@ export default function Card() {
       <section>
         <div className="space-x-8 mt-12 flex justify-center">
           <button className="rounded-4xl bg-red-700 text-white px-4 py-2 justify-between">
-            Our Location
+            Our Location <span className="bi bi-caret-right"></span>
           </button>
           <button className="rounded-3xl bg-red-700 text-white px-4 py-2 justify-between">
-            Franchise
+            Franchise <span className="bi bi-caret-right"></span>
           </button>
         </div>
       </section>

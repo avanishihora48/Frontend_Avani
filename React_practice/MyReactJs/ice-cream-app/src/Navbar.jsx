@@ -1,7 +1,7 @@
 import 'react'
 import logoimg from './assets/images/main-logo.png'
 import './assets/css/style.css'
-
+import { Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <section id="icecream-header" className="container-fluid w-full p-5 flex">
@@ -11,30 +11,30 @@ export default function Navbar() {
       <div className="mx-10 navbar-links">
         <ul style={{ display: 'flex' }} className="mt-2.5 gap-6 font-semibold">
           <li>
-            <a href="">
+            <Link to="/">
               <span className="text-red-700">Home</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">About us</a>
+            <Link to="/about-us">About us</Link>
           </li>
           <li>
-            <a href="">How it`s made?</a>
+            <Link to="/made-it">How it Made ?</Link>
           </li>
           <li>
-            <a href="">Our Products</a>
+            <Link to="/our-products">Our Products</Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="/contact-us">Contact</Link>
           </li>
         </ul>
       </div>
       <div className="ml-auto">
         <button
-          className="px-6 py-2 font-bold  rounded-full shadow-lg  bg-orange-100"
+          className="px-6 py-2 font-bold  rounded-full shadow-lg  bg-orange-100 "
           style={{ color: '#E73C56' }}
         >
-          Buy now
+          Buy now <span className="bi bi-caret-right"></span>
         </button>
       </div>
     </section>
