@@ -1,0 +1,53 @@
+# Data types 
+
+Q1: What are the different types of data types in Java?
+
+ans :- there are two types of data types 1. primitive , 2. non-primitive
+
+Q.2 Can you list all the primitive data types in JavaScript? 
+
+ans:- Here are all 7 primitive data types in JavaScript:
+
+String ("Hello")
+Number (42, 3.14)
+BigInt (9007199254740991n)
+Boolean (true, false)
+Undefined (let x; // x is undefined)
+Null (let y = null;)
+Symbol (Symbol('id'))
+
+Q3: What is the difference between null and undefined in JavaScript?
+
+Ans:null: It is an explicit absence of value. You manually assign null to a variable to indicate that it has no value.
+    let x = null; // x is explicitly set to null
+
+    undefined: It means a variable has been declared but not assigned any value
+    let y; // y is undefined
+
+Q4: Is JavaScript dynamically typed or statically typed? Explain.
+
+Ans:- JavaScript is a dynamically typed language because you don’t need to specify the data type of a variable when declaring it. The type is determined at runtime.
+
+Q5: What is the difference between let, const, and var in JavaScript?
+
+Ans:- 1. var
+
+Can be redeclared and reassigned.
+Function-scoped.
+Can cause issues due to hoisting.
+
+2. let
+
+Cannot be redeclared but can be reassigned.
+Block-scoped.
+
+3. const
+
+Cannot be redeclared or reassigned.
+Must be initialized at declaration.
+
+Q6: What is hoisting in JavaScript?
+
+Ans:- Hoisting is a behavior where variable and function declarations are moved ("hoisted") to the top of their scope before the code executes. However, only the declaration is hoisted, not the initialization.
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Data</title>
+</head>
+
+<body style="background: black;">
+  <button id="follow" style="margin-left: 600px; width: 100px; height: 50px;">Click</button>
+  <div id="data"></div>
+
+  <script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        const data = JSON.parse(this.responseText);
+        console.log(data);
+
+        document.getElementById("follow").addEventListener('click', function () {
+          document.getElementById('data').innerHTML = `
+            <div style="background-color: white; height: 200px; width: 500px; color: black; 
+                        border-radius: 6px; margin: 20px auto; padding: 10px; text-align: center;">
+              <h3>User Information</h3>
+              <p><strong>Followers:</strong> ${data.followers}</p>
+              <p><strong>Blog:</strong> <a href="${data.blog}" target="_blank">${data.blog || 'N/A'}</a></p>
+            </div>`;
+        });
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+
+</html>

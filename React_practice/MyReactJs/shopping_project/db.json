@@ -1,0 +1,48 @@
+{
+  "add-category": [
+    {
+      "id": "782b",
+      "categoryName": "Electronics",
+      "description": "nice product",
+      "price": "200"
+    },
+    {
+      "id": "54ce",
+      "categoryName": "Electronics",
+      "description": "nice",
+      "price": "3000"
+    },
+    {
+      "id": "ee11",
+      "categoryName": "Electronics",
+      "description": "akjgfjsgd",
+      "price": "2000"
+    },
+    {
+      "id": "252d",
+      "categoryName": "Electronics",
+      "price": "2000",
+      "description": "dfgsdgf"
+    },
+    {
+      "id": "208a",
+      "productName": "sdfsdf",
+      "productPrice": "3664",
+      "productDescription": "gtergetrtg"
+    }
+  ],
+  "add-products": [
+    {
+      "id": "0058",
+      "productName": "mobile",
+      "productPrice": "43435",
+      "productDescription": "sdfsdgfsdg"
+    },
+    {
+      "id": "a9e7",
+      "productName": "ufefs",
+      "productPrice": "36456",
+      "productDescription": "kjfhjdsgfdjh"
+    }
+  ]
+}

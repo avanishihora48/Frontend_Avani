@@ -10,7 +10,8 @@ import Contact from './Contact.jsx'
 
 // Admin panel
 import Adminlogin from './Admin/adminlogin.jsx'
-import Adminpanel from './Admin/assets/Adminpanel.jsx'
+import Adminpanel from './Admin/Adminpanel.jsx'
+import AdminSidebar from './Admin/AdminSidebar.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/contact-us" element={<Contact />}></Route>
           <Route path="/admin-login" element={<Adminlogin />}></Route>
           <Route path="/admin-panel" element={<Adminpanel />}></Route>
+          <Route path="/admin-sidebar" element={<AdminSidebar />}></Route>
           <Route path="*" element={<PageNotFound />}></Route>
         </Route>
       </Routes>

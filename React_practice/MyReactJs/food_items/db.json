@@ -1,0 +1,10 @@
+{
+  "food-items": [
+    {
+      "id": "84a0",
+      "foodName": "pizza",
+      "price": "200",
+      "category": "Pizza"
+    }
+  ]
+}

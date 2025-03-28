@@ -7,7 +7,7 @@ There are two types of data types:-
 2. Non-primitive Datatypes => They are derived and mutable means that its value can be change.
 */
 
-//Primitve Data Types:-
+//Primitve Data Types:-  (short:- NNBBSU)
 
 //a. Number => 2^23
 
@@ -61,3 +61,26 @@ const myFunction = function () {
 }
 console.log(typeof myFunction) // function
 myFunction()
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/* difference between let , var and const 
+
+1. var
+
+Can be redeclared and reassigned.
+Function-scoped.
+Can cause issues due to hoisting.
+
+
+2. let
+
+Cannot be redeclared but can be reassigned.
+Block-scoped.
+
+3. const
+
+Cannot be redeclared or reassigned.
+Must be initialized at declaration.
+
+*/
