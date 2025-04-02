@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+  <button>Click here</button>
+
+  <!-- In JavaScript, the .bind() method is used to explicitly set the this value of a function. This is particularly useful
+  when dealing with event handlers, callbacks, or when passing methods as arguments where this may change unexpectedly. -->
+
+  <script>
+    // class React {
+    //   constructor() {
+    //     this.library = "React";
+    //     this.server = "http://localhost:3000";
+
+    //     document
+    //       .querySelector('button')
+    //       .addEventListener('click', this.handleClick.bind(this));
+    //   }
+
+    //   handleClick() {
+    //     console.log("Button clicked");
+    //     console.log(this);
+
+    //     console.log(this.server);
+    //   }
+    // }
+
+    // const app = new React();
+
+    // console.log(app);
+
+
+    // class myClass {
+    //   constructor() {
+    //     this.name = "avani"
+
+    //     document
+    //       .querySelector('button')
+    //       .addEventListener('click', this.sayHello.bind(this))
+    //   }
+
+    //   sayHello() {
+    //     console.log("Hello: " + this.name);
+    //   }
+
+    // }
+
+    // new myClass()
+
+    const user = {
+      name: "Avani",
+
+      greet: function () {
+        console.log("Hello, " + this.name);
+      }
+    };
+
+    const greetFunc = user.greet.bind(user);
+    greetFunc();
+
+  </script>
+
+</body>
+
+</html>
