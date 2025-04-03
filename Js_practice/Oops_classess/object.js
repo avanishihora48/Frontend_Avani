@@ -34,8 +34,6 @@ createUser.prototype.printMe = function () {
   console.log(`score is ${this.score}`)
 }
 
-const count = 0
-
 const user1 = new createUser('avani', 25)
 const user2 = new createUser('darsh', 50)
 const user3 = new createUser('vibha', 100)
