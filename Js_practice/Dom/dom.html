@@ -58,10 +58,10 @@
   12. title.innerText // Welcome to Dom Learning
 
   13. document.querySelector('#title')
-  <h1 id=​"title" class=​"heading">​"Welcome to Dom Learning "<span style=​"display:​ none;​">​Helloooooo​</span>​</h1>​
+  <h1 id=​"title" class=​"heading">​"Welcome to Dom Learning"<span style=​"display:​ none;​">​Helloooooo​</span>​</h1>​
   
   14. document.querySelector('.heading')
-  <h1 id=​"title" class=​"heading">​"Welcome to Dom Learning "<span style=​"display:​ none;​">​Helloooooo​</span>​</h1>​
+  <h1 id=​"title" class=​"heading">​"Welcome to Dom Learning"<span style=​"display:​ none;​">​Helloooooo​</span>​</h1>​
   
   15. document.querySelector('input[type="password"]') // <input type="password" name id>
   
@@ -82,8 +82,8 @@
           l.style.backgroundColor = "green"
       })
 
-  22. document.getElementByClassName('list-item')
-      const tempClassList =  document.getElementByClassName('list-item')
+  22. document.getElementsByClassName('list-item')
+      const tempClassList =  document.getElementsByClassName('list-item')
 
       tempClassList.forEach(function(li){
           console.log(li)   // Error we have to convert it into array

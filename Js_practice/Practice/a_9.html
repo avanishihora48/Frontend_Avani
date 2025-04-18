@@ -1,0 +1,33 @@
+<!-- 
+ 
+Create a paragraph that says “Hover and then move out!”.
+When the user moves the mouse pointer out of the paragraph area, a function named mouseGone() should run and alert:
+“You moved your mouse out!”
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <p onmouseout="mouseGone()">Hover and then move out!</p>
+</body>
+
+<script>
+
+  mouseGone = () => {
+    alert(`You moved your mouse out!`)
+  }
+
+</script>
+
+</html>

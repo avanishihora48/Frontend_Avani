@@ -19,7 +19,7 @@ export default function AddFood() {
     }
 
     axios
-      .post(`http://localhost:8000/food-items`, insert)
+      .post(`http://localhost:8000/food-item`, insert)
       .then(() => {
         Swal.fire({
           title: 'Thanks',

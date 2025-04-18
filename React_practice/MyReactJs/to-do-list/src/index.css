@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root
+{
+   --bg--dark--green : #324645
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.header
+{
+  color: var(--bg--dark--green);
+}
+.frm
+{
+  background-color: var(--bg--dark--green);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+.button
+{
+  background-color: var(--bg--dark--green);
+  color: white;
+  padding: 7px;
+  width: 150px;
+  border-radius: 3px;
+}
+.container
+{
+  background-color: var(--bg--dark--green);
+}
+
+.btn
+{
+  background-color: var(--bg--dark--green);
+}

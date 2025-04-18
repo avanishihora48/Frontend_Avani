@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+
+  <h1 id="main">
+    Hello World! <b>Avani<span style="display: none;"> hiii</span></b>
+  </h1>
+
+  <div class="parent">
+    <h1>Welcome !</h1>
+  </div>
+</body>
+
+<ul id="list">
+  <li>python</li>
+  <li>java</li>
+  <li>C++</li>
+</ul>
+<script>
+  // 1. How do you select an element by its ID and change its text content? 
+  // document.getElementById("main").textContent = "Avani"
+
+  // =================================================================================
+
+  // 2. How can you create a new <p> element and add it to the body?
+  // const p = document.createElement('p');
+  // const text = document.createTextNode("Hii how are u ?");
+  // p.appendChild(text);
+  // document.body.append(p);  // Add the <p> element to the DOM
+
+  // ==================================================================================
+
+  // 3. What’s the difference between innerText, textContent, and innerHTML?
+  // const heading = document.getElementById("main");
+
+  // console.log("innerHTML:", heading.innerHTML);   // Shows: Hello World! <b>Avani<span style="display: none;"> hiii</span></b>
+  // console.log("textContent:", heading.textContent); // Shows: Hello World! Avani hiii
+  // console.log("innerText:", heading.innerText);     // Shows: Hello World! Avani
+
+  // ====================================================================================
+
+  // 4. How do you remove an element from the DOM?
+  // document.body.removeChild(p);  // This removes the <p> element after it's added
+  // Removes the <h1> element with id="main" after page load
+  //document.getElementById("main").remove();
+
+  // ==================================================================================
+  // 5. How can you change the background color of a <div> using JavaScript?
+  // const clr = document.querySelector(".parent")
+  // clr.style.backgroundColor = "blue"
+
+  // ===================================================================================
+  // 6. Create a button that, when clicked, adds a new list item (<li>) to an existing unordered list (<ul>).
+
+  // const btn = document.createElement('button');
+  // btn.textContent = "Click"
+  // document.body.append(btn)
+
+  // btn.onclick = function () {
+  //   const li = document.createElement('li')
+  //   const add = document.createTextNode("C")
+  //   li.append(add)
+
+  //   const ul = document.getElementById("list")
+  //   ul.appendChild(li)
+
+  // }
+
+  // =======================================================================================
+
+
+
+
+</script>
+
+</html>

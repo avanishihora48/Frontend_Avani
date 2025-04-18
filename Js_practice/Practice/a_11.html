@@ -1,0 +1,35 @@
+<!-- 
+ 
+Create a button dynamically using JavaScript. When the button is clicked, it should change the background color of the page to a random color.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <script>
+
+    const btn = document.createElement('button')
+    btn.textContent = "Click"
+    document.body.append(btn)
+
+    btn.onclick = changeBackgroundColor;
+
+    function changeBackgroundColor() {
+      const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`
+      document.body.style.backgroundColor = randomColor
+    }
+
+  </script>
+</body>
+
+</html>

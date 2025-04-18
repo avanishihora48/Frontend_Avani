@@ -1,0 +1,32 @@
+<!-- 
+ 
+Create an <input> text box. When the user clicks inside it (i.e., it gains focus), a function named onFocusAlert()
+should run and show an alert: “Input is focused!”
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <input type="text" placeholder="focus" onfocus="onFocusAlert()" />
+
+</body>
+
+<script>
+
+  function onFocusAlert() {
+    alert("Input is focused!")
+  }
+
+</script>
+
+</html>
