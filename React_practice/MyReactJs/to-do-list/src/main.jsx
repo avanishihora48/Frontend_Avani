@@ -4,6 +4,7 @@ import './index.css'
 import Container from './Container.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Task from './Task.jsx'
+import EditTask from './EditTask.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/container" element={<Container />} />
         <Route path="/task" element={<Task />} />
+        <Route path="/edit/:id" element={<EditTask />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

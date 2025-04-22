@@ -50,3 +50,111 @@ Why Use Fragments?
 🔹 Avoids unnecessary <div> wrappers.
 🔹 Improves performance (no extra DOM nodes).
 🔹 Keeps the structure clean.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Hooks:- 
+
+useState :- useState is a React Hook used to manage state inside functional components.
+	When you call setState (like setCount), React:
+
+        Updates the state (in memory),
+        Re-renders the component,
+        Updates the Virtual DOM,
+        Then React compares (diffs) the new Virtual DOM with the old one,
+        And finally updates the real DOM only where needed.
+
+useEffect :- 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+What is Fiber?
+React is like a magic painter 🧙‍♂️ that builds your website on the screen. It paints all the parts—buttons, text, pictures, etc.
+Before Fiber, this painter used a very old method. If one part of the page changed, it would repaint everything again 😓. That was tiring and slow.
+So the React team gave this painter a new way to work, called Fiber!
+
+Fiber is like giving the painter:
+
+Super fast hands 👐
+
+A plan book 📓
+
+And the ability to pause and think 🤔
+
+🏗️ Why was Fiber made?
+React wanted to:
+
+Do tasks in small pieces 🧩 (so the site doesn’t freeze)
+
+Pick the most important tasks first 🔥 (like new messages)
+
+Go back and fix mistakes 🔄 (without crashing)
+
+Help add cool new features easily ✨
+
+🧱 How React Worked Before (the "Stack Reconciler")
+React used to be like a kid building towers with LEGO 🧒🧱. If one block fell, the whole tower was rebuilt from scratch!
+
+This method:
+
+Did everything in one go (no breaks!)
+
+Couldn’t stop in the middle
+
+Was hard to add smart features
+
+🔄 What is Reconciliation?
+Reconciliation is a fancy word for figuring out what changed and updating the screen.
+
+Imagine you drew a flower 🌸. If one petal changes color, React's job is to find that petal and repaint only it, not the whole flower.
+
+Fiber makes this easier and smarter.
+
+🧵 What is a Fiber?
+A Fiber is like a small work note 📄 for one part of your screen (like a button or text).
+Each Fiber keeps track of:
+What it is (button? image?)
+What it should look like
+What changed
+What to do next
+
+All these Fibers are connected like a tree 🌳, where one Fiber points to others (like parent-child).
+
+🕒 Work in Chunks = Time Slicing
+Old React: “Do everything now! Don’t stop!”
+Fiber React: “Let’s take small steps and rest when needed.”
+
+This is called time slicing ⏳ — it helps React do some work, then wait, then continue. This keeps the app fast and smooth!
+
+🔁 Work Can Be Restarted = Better Mistake Handling
+If React finds a mistake, Fiber allows it to:
+
+Cancel the work
+
+Try again from scratch
+
+Without crashing the whole app 😮‍💨
+
+Like when you spill paint and just clean that part without throwing away the whole paper.
+
+🎯 Priorities = Work on Important Things First
+Fiber helps React know what’s urgent (like typing) and what can wait (like animating something). It’s like:
+
+Homework due tomorrow? Do it first!
+Cleaning your room? Maybe later 😅
+
+🧪 New Features It Enables
+With Fiber, React can now support:
+
+Async rendering (do work later if needed)
+Suspense (wait for data before showing stuff)
+Error boundaries (catch mistakes in one part and continue)
+
+🏁 In Simple Words
+React Fiber is:
+
+A new way for React to work smarter
+Makes websites faster, smoother, and more flexible
+Helps React choose what's important and handle mistakes better
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

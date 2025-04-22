@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import person from './assets/images/img1.jpg'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 export default function Container() {
   const [openId, setOpenId] = useState('')
   const [items, setItems] = useState('')
   const [count, setCount] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
+  const navigate = useNavigate()
   const tasksPerPage = 10
 
   useEffect(() => {
@@ -17,6 +19,19 @@ export default function Container() {
       setCount(response.data.length)
     })
   }, [])
+
+  // delete data....
+  const handleDelete = async (id) => {
+    await axios.delete(`http://localhost:8000/add-task/${id}`)
+    setItems(items.filter((item) => item.id !== id))
+
+    Swal.fire({
+      icon: 'error',
+      title: 'Ohh...',
+      text: 'item deleted',
+      footer: '<a href="#">Why do I have this issue?</a>',
+    })
+  }
 
   const indexOfLastTask = currentPage * tasksPerPage
   const indexOfFirstTask = indexOfLastTask - tasksPerPage
@@ -104,10 +119,16 @@ export default function Container() {
                   {openId === task.id && (
                     <div className="absolute w-36 bg-white border rounded-md shadow-lg -mt-2">
                       <ul className="text-sm text-gray-700">
-                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        <li
+                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer "
+                          onClick={() => navigate(`/edit/${task.id}`)}
+                        >
                           Edit
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        <li
+                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                          onClick={() => handleDelete(task.id)}
+                        >
                           Delete
                         </li>
                       </ul>

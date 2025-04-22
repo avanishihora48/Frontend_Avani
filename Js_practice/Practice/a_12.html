@@ -27,7 +27,32 @@ Use events (click) to handle the increment and decrement actions.
 <body>
 
   <script>
-    document.createElement('')
+    let count = 0;
+
+    const counterDisplay = document.createElement('div');
+    counterDisplay.textContent = `Count: ${count}`;
+    counterDisplay.style.fontSize = '24px';
+    counterDisplay.style.marginBottom = '10px';
+    document.body.appendChild(counterDisplay);
+
+    const btn1 = document.createElement('button')
+    btn1.textContent = "Increment"
+    document.body.append(btn1)
+
+    const btn2 = document.createElement('button')
+    btn2.textContent = "Decrement"
+    document.body.append(btn2)
+
+    btn1.addEventListener('click', () => {
+      count++;
+      counterDisplay.textContent = `count: ${count}`
+    })
+
+    btn2.addEventListener('click', () => {
+      count--;
+      counterDisplay.textContent = `count: ${count}`
+    })
+
   </script>
 </body>
 
