@@ -20,7 +20,7 @@ React.js is a JavaScript library for building user interfaces (UIs), developed b
 ✔️ Strong Community Support
 ✔️ Easy to Learn & Use
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # Steps to create react app:- 
 
@@ -29,7 +29,7 @@ React.js is a JavaScript library for building user interfaces (UIs), developed b
 3. cd app-name
 4. npm install 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 What are Components in React?
 -> Definition:
@@ -41,7 +41,7 @@ What are Components in React?
 🔹 Functional Components (Preferred) – Written as JavaScript functions.
 🔹 Class Components (Older method) – Written as ES6 classes.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 What is a Fragment in React?
 A Fragment in React is a lightweight way to group multiple elements without adding extra HTML nodes to the DOM. It helps improve performance and keeps the markup clean.
@@ -66,7 +66,9 @@ useState :- useState is a React Hook used to manage state inside functional comp
 
 useEffect :- 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+useCallback :- its a React Hook that returns a memoized version of a callback function, which only changes if its dependencies change.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 What is Fiber?
 React is like a magic painter 🧙‍♂️ that builds your website on the screen. It paints all the parts—buttons, text, pictures, etc.
@@ -157,4 +159,19 @@ A new way for React to work smarter
 Makes websites faster, smoother, and more flexible
 Helps React choose what's important and handle mistakes better
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# props:- Props are used to pass data from one component to another (usually from parent to child).
+          They are read-only (cannot be changed by the child component).
+          function Greeting({ name }) {
+                  return <h2>Hello, {name}!</h2>;
+          }
+
+# state:- State is a built-in object that stores dynamic data in a React component.
+          It allows the component to remember and respond to user input, API responses, or any changes.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+

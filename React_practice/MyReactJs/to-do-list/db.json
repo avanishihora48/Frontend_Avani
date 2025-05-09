@@ -1,12 +1,6 @@
 {
   "add-task": [
     {
-      "task": "data collect",
-      "time": "2",
-      "date": "2025-04-24",
-      "id": "04e8"
-    },
-    {
       "id": "6f93",
       "task": "clear",
       "time": "1 hr",

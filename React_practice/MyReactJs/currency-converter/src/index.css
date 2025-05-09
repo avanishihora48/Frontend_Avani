@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)),url('./assets/images/img1.avif') no-repeat center center;
+  background-size: cover;
+}
