@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty & Spa Flash Sale</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .left-panel {
+      width: 50%;
+      height: 800px;
+      background: linear-gradient(to right, #f87e5a, #f89d5a);
+      padding: 80px 80px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top-right-radius: 100%;
+      border-bottom-right-radius: 80%;
+    }
+
+    .left .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .flash-sale {
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+    }
+
+    .left-panel h1 {
+      font-size: 3rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 350px;
+    }
+
+    .learn-more {
+      background-color: white;
+      color: #f87e5a;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .social-icons {
+      font-size: 1.5rem;
+      display: flex;
+      gap: 20px;
+    }
+
+    .right-panel {
+      width: 50%;
+      background-image: url('Spa.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .tag {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      background-color: #fffc55;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 50%;
+      color: #000;
+      font-size: 1rem;
+    }
+
+    .vertical-text {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: rotate(90deg) translateY(-50%);
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .left-rounded-shape {
+      position: absolute;
+      left: 0;
+      margin-top: 500px;
+      background-color: #f87e5a;
+      width: 60%;
+      height: 500px;
+      border-top-right-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="logo">YOUR LOGO</div>
+      <p class="flash-sale">FLASH SALE</p>
+      <h1>Beauty & Spa</h1>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor
+      </p>
+      <button class="learn-more">Learn more</button>
+      <div class="social-icons">
+        <span>📸</span>
+        <span>📘</span>
+        <span>🐦</span>
+      </div>
+      <div class="left-rounded-shape">Hello</div>
+    </div>
+
+    <div class="right-panel">
+      <div class="tag">50% OFF</div>
+      <div class="vertical-text">WEEKEND ONLY</div>
+    </div>
+  </div>
+</body>
+
+</html>

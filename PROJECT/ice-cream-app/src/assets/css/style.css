@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Sweetie Summer';
+  src: url('./src/assets/fonts/Sweetie-Summer.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Superbold';
+  src: url('../fonts/Superbold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.sweet-text {
+  font-family: 'Sweetie Summer', cursive;
+  font-size: 3rem;
+  color: #ff69b4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.loader-app {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+.loader-app img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  margin-top: 20%;
+
+}
+
+/* iccream main stylesheet */
+#icecream-header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
